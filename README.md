@@ -14,10 +14,9 @@ uma forma de fazer isso sem pesquisar onde está o arquivo é clicar com o botã
 # Telas
 
 * Site.master.cs / Default.aspx - Tela inicial. Nela há 3 botões (tanto no header como no body, ainda não ajustados no CSS nem no Bootstrap): Cadastros, Lista e Pesquisas:
-=> Cadastros: HotelCadastro.aspx - Tela de cadastro do hotel com Nome, Avaliação, Descrição, Endereço (com CEP e Complemento) e Comodidades pre-definidas. Não foi adicionada a Cidade nem Estado, pois posteriormente serão automaticamente preenchidos somente com o CEP, através de uma API;
-=> Lista: HotelLista.aspx - Tela que automaticamente lista os hoteis cadastrados no sistema, somente. Minha ideia seria colocar um dropdown para filtrar por Nome, Avaliação ou quantidade de Comodidades;
-=> Pesquisas: HotelPesquisa.aspx - Tela que realiza as consultas de acordo com o nome e/ou comodidades. Pode ser pesquisado qualquer valor que a consulta na DB é por ```like```. Em caso de campo em branco, a consulta considera todos;
+* Cadastros: HotelCadastro.aspx - Tela de cadastro do hotel com Nome, Avaliação, Descrição, Endereço (com CEP e Complemento) e Comodidades pre-definidas. Não foi adicionada a Cidade nem Estado, pois posteriormente serão automaticamente preenchidos somente com o CEP, através de uma API;
+* Lista: HotelLista.aspx - Tela que automaticamente lista os hoteis cadastrados no sistema, somente. Minha ideia seria colocar um dropdown para filtrar por Nome, Avaliação ou quantidade de Comodidades;
+* Pesquisas: HotelPesquisa.aspx - Tela que realiza as consultas de acordo com o nome e/ou comodidades. Pode ser pesquisado qualquer valor que a consulta na DB é por ```like```. Em caso de campo em branco, a consulta considera todos;
 Nesta mesma tela, ao realizar a consulta, dois botões estarão aparecendo: na cor azul para edição do hotel e em vermelho para exclusão. Há confirmações para os dois.
-
-=> Edição: HotelUpdate.aspx?=id[parametro] - A tela carrega de acordo com o hotel selecionado anteriormente (em Pesquisas). Infelizmente não consegui achar uma solução até o momento do envio deste para listar os switches (checkbox) que já estavam selecionados anteriormente, mas vou trabalhar mais tarde para finalizar esta etapa.
+* Edição: HotelUpdate.aspx?=id[parametro] - A tela carrega de acordo com o hotel selecionado anteriormente (em Pesquisas). Infelizmente não consegui achar uma solução até o momento do envio deste para listar os switches (checkbox) que já estavam selecionados anteriormente, mas vou trabalhar mais tarde para finalizar esta etapa.
 Ao confirmar no botão, a database é atualizada com os novos valores (e devidas validações).
