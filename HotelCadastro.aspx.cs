@@ -29,7 +29,7 @@ namespace expenseOnHotel
             const string fileName = @"C:\Users\natan\Desktop\expenseOnHotel\expenseOnHotel\App_Data\Database1.mdf";
 
             //conexão com db no VS            
-            string con = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\DESENV03\Desktop\expenseOnHotel\App_Data\Database1.mdf;Integrated Security=True;Connect Timeout=30";
+            string con = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + fileName + ";Integrated Security=True";            
             SqlConnection dbConnection = new SqlConnection(con);
 
             //query para inserir os dados
